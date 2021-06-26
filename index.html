@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Domain Purchase Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-host-cloud.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+Host Cloud Template
+
+https://templatemo.com/tm-541-host-cloud
+
+-->
+  </head>
+
+  <body >
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Domain <em>purchase</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="header-text caption">
+              <img src="./assets/images/onhost_logo.png" style="width: 50%; height: auto;" />
+              <br><br>
+              <h2>Purchase your domain</h2>
+              <div id="search-section">
+              	<form id="suggestion_form" name="gs" method="get" action="index.php">
+                  <div class="searchText-container" style="display: flex; flex-direction: column;">
+                    <div class="searchText">
+                      <input id="domain" type="text" name="domain" class="searchText" placeholder="Enter your domain here..." autocomplete="on">
+                    </div>
+                    <span id="sp_warning" style="visibility: hidden;color: red;">Warning: Not available</span>
+                    <br>
+                    <a id="buy" class="main-button" href="#" style="visibility: hidden;text-transform: none;">Purchase Domain(semvac.info), $9.99 per year</a>
+                    <br>
+                    <span id="sp_warning1" style="visibility: hidden;color: red;">Warning: Not available</span>
+                  </div>
+                    <!-- <a class="main-button" href="#">Check Available</a> -->
+                    <!-- <a class="main-button" href="#">Check Available</a> -->
+                  <input id="button" type="button" name="button" class="main-button" style="color: white;" value="Search Now">
+                </form>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container">
+        
+          <div class="col-md-12">
+            
+              <p style="text-align: center;">Copyright &copy; 2021 Godaddy API
+				- Developed by Radmir</a></p>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h5>Bill Info</h5>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div style="width: 50%; padding-left:20px;">
+          <p>addressMailing</p>
+          <div class="divItem">
+            <input id="address1" type="text" name="" placeholder="address1" > 
+            <input id="address2" type="text" name="" placeholder="address2" >
+            <input id="city" type="text" name="" placeholder="city" >
+            <input id="country" type="text" name="" placeholder="country" >
+            <input id="postalCode" type="text" name="" placeholder="postalCode" >
+            <input id="state" type="text" name="" placeholder="state" >
+          </div>
+          <p>email</p>
+          <div class="divItem">
+            <input id="email" type="email" name="" placeholder="xyz@example.com" >
+          </div>
+          <p>fax</p>
+          <div class="divItem">
+            <input id="fax" type="tel" name="" placeholder="fax" >
+          </div>
+        </div>
+        <div style="width: 50%; padding-left:20px;">
+          <p>jobTitle</p>
+          <div class="divItem">
+            <input id="jobTitle" type="text" name="" placeholder="jobTitle" >
+          </div>
+          <p>nameFirst</p>
+          <div class="divItem">
+            <input id="nameFirst" type="text" name="" placeholder="nameFirst" required >
+          </div>
+          <p>nameLast</p>
+          <div class="divItem">
+            <input id="nameLast" type="text" name="" placeholder="nameLast" >
+          </div>
+          <p>nameMiddle</p>
+          <div class="divItem">
+            <input id="nameMiddle" type="text" name="" placeholder="nameMiddle" >
+          </div>
+          <p>organization</p>
+          <div class="divItem">
+            <input id="organization" type="text" name="" placeholder="organization" >
+          </div>
+          <p>phone</p>
+          <div class="divItem">
+            <input id="phone" type="tel" name="" placeholder="+41.000000000" >
+          </div><br>
+        </div>
+      </div>
+      
+
+      
+
+    </div>
+    <div class="modal-footer">
+      <a id="purchase" class="main-button" href="#" style="float:right;text-transform: none;">Purchase</a>
+    </div>
+  </div>
+
+</div>
+    <style>
+
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: #fefefe;
+          margin: auto;
+          padding: 0;
+          border: 1px solid #888;
+          width: 50%;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+        }
+
+        /* The Close Button */
+        .close {
+          color: white;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        .modal-header {
+          padding: 10px 16px;
+          background-color: cadetblue;
+          color: white;
+          display: initial;
+        }
+
+        .modal-body {padding: 10px 16px; }
+
+        .modal-footer {
+          padding: 10px 16px;
+          background-color: cadetblue;
+          color: white;
+          display: initial;
+        }
+        .modal-divItem {
+          width: 90%; padding-left:10px;
+        }
+        .modal input {
+          width: 95%; margin-top: 2px;
+        }
+        .modal p {
+          margin-top: 5px;
+          color: cadetblue;
+        }
+    </style>
+    <!-- Footer Ends Here -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    
+      <script type="text/javascript">
+      (function( $ ) {
+          var domain_available = '';
+          var price_available = 0;
+          var modal = document.getElementById("myModal");
+          var span = document.getElementsByClassName("close")[0];
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          modal.style.display = "none";
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+
+          $("#buy").click(function() {
+            
+              if (domain_available == '') {
+                return;
+              }
+
+
+              modal.style.display = "block";
+          });
+          $("#purchase").click(function() {
+            
+              if (domain_available == '') {
+                return;
+              }
+              var address1 = $("#address1").val().trim();
+              var address2 = $("#address2").val().trim();
+              var city = $("#city").val().trim();
+              var country = $("#country").val().trim();
+              var postalCode = $("#postalCode").val().trim();
+              var state = $("#state").val().trim();
+              var email = $("#email").val().trim();
+              var fax = $("#fax").val().trim();
+              var jobTitle = $("#jobTitle").val().trim();
+              var nameFirst = $("#nameFirst").val().trim();
+              var nameLast = $("#nameLast").val().trim();
+              var nameMiddle = $("#nameMiddle").val().trim();
+              var organization = $("#organization").val().trim();
+              var phone = $("#phone").val().trim();
+              // if (address1.length*address2.length*city.length*country.length*postalCode.length*state.length*email.length*fax.length
+              //   *jobTitle.length*nameFirst.length*nameLast.length*nameMiddle.length*organization.length*phone.length == 0) {
+              //   alert('Please fill in empty fields');
+              //   return;
+              // }
+              modal.style.display = "none";
+
+              $("#sp_warning1").css('visibility', 'hidden');
+              $("#sp_warning1").css('color', 'red');
+              $("#buy").css('pointer-events', 'none');
+              $("#buy").text("Wait a sec...");
+
+              var data = {
+                'domain':domain_available, 
+                'type':'purchase',
+                'address1':address1,
+                'address2':address2,
+                'city':city,
+                'country':country,
+                'postalCode':postalCode,
+                'state':state,
+                'email':email,
+                'fax':fax,
+                'jobTitle':jobTitle,
+                'nameFirst':nameFirst,
+                'nameLast':nameLast,
+                'nameMiddle':nameMiddle,
+                'organization':organization,
+                'phone':phone,
+              };
+              console.log(data);
+              $.ajax({url: "api.php", data:data, type:'POST', success: function(result){
+                $("#buy").text("Purchase Domain(" + domain_available + ") ,$" + price_available/1000000 + "/1 year");
+                $("#buy").css('pointer-events', 'auto');
+                $("#sp_warning1").css('visibility', 'visible');
+                $("#sp_warning1").text("");
+                var res = JSON.parse(result);
+                console.log(res);
+                if (typeof res.orderId === "undefined") {
+                // if (res.available == false) {
+                  $("#sp_warning1").text(res.message);
+                  
+                  // $("#buy").css('visibility', 'hidden');
+                } else if (res.orderId > 0) {
+                  $("#sp_warning1").text(domain_available + " is purchased successfully!\n Order ID is " + res.orderId);
+                  $("#sp_warning1").css('color', 'green');
+                } else {
+                  $("#sp_warning1").text("Error");
+                }
+                
+
+              }});
+
+
+          });
+
+
+          $("#button").click(function() {
+
+              var domain = $("#domain").val().trim();
+              if (domain == '') {
+                  
+                  return;
+              }
+              $("#buy").css('visibility', 'hidden');
+              $("#sp_warning").css('visibility', 'hidden');
+              $("#sp_warning").css('color', 'red');
+              $("#button").attr('value', 'wait a sec...');
+              $("#button").prop('disabled', true);
+
+              var data = {'domain':domain, 'type':'check'};
+              $.ajax({url: "api.php", data:data, type:'POST', success: function(result){
+                $("#button").attr('value', 'Search Now');
+                $("#button").prop('disabled', false);
+                var res = JSON.parse(result);
+                console.log(res);
+                // if (typeof res.available === "undefined") {
+                if (res.available == false) {
+                  $("#sp_warning").text(domain + " is not available");
+                  $("#sp_warning").css('visibility', 'visible');
+                  $("#buy").css('visibility', 'hidden');
+                } else if (res.available == true) {
+                  domain_available = domain;
+                  price_available = res.price;
+                  $("#sp_warning").text(domain + " is available");
+                  $("#sp_warning").css('visibility', 'visible');
+                  $("#buy").text("Purchase Domain(" + domain + ") ,$" + res.price/1000000 + "/1 year");
+                  $("#buy").css('visibility', 'visible');
+                  $("#sp_warning").css('color', 'green');
+                } else {
+                  $("#sp_warning").text("Error");
+                  $("#sp_warning").css('visibility', 'visible');
+                  $("#buy").css('visibility', 'hidden');
+                }
+
+              }});
+          });
+
+      }).apply( this, [ jQuery ]);
+    </script>
+
+  </body>
+</html>
+
+<?php
+
+
+?>
